@@ -159,43 +159,6 @@ $(function(){
             }
             http.send(params);
 
-			// var cdb = $('.itemseleccionado').attr("id");
-			// console.log(cdb);
-			// console.log(listt);
-
-			// $.ajax({
-			// 		url: "http://localhost:8888/bnext/conectionSoap.php",
-			// 		type: 'POST',
-			// 		headers: {
-			// 				"content-type": "application/x-www-form-urlencoded"
-			// 		},
-			// 		data: {
-			// 			"type": "confirm",
-			// 			"init": $('#dinit').val(),
-			// 			"end": $('#dend').val(),
-			// 			"product": $('#product').val(),
-			// 			"sellContract": $('#sellContract').val(),
-			// 			"sellTariff": $('#sellTariff').val(),
-			// 			"sellPriceSheet": $('#sellPriceSheet').val(),
-			// 			"modality": cdb,
-			// 			"adultNumber": 1,
-			// 			"name": $('#name').val(),
-			// 			"surname": $('#surname').val(),
-			// 			"age": $('#age').val()
-			// 		},
-			// 		dataType: "json",
-			// 		error: function(xhr, status, error) {
-			// 			console.log(xhr.responseText);
-			// 			$alert(xhr.responseText);
-			// 		},
-			// 		success: function(res) {
-			// 				console.log(res);
-							
-			// 		}
-			// });
-
-
-
 		},
         labels: {
             finish: "Enviar",
