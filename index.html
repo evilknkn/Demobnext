@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bnext</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- DATE-PICKER -->
+		<link rel="stylesheet" href="vendor/date-picker/css/datepicker.min.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="image-holder">
+				<img src="images/form-wizard.png" alt="">
+			</div>
+            <form action="">
+            	<div class="form-header">
+            		<a href="#">Seguro de viaje</a>
+            		<h3>Si quieres estar tranquilo en tu viaje, en tu vida o con tu salud, conoce los seguros online que tenemos en nuestro Marketplace. Seguro que te gustan</h3>
+            	</div>
+            	<div id="wizard">
+            		<!-- SECTION 1 -->
+	                <h4></h4>
+	                <section>
+
+                        <div class="form-row error" id="errorDate" style="display: none;">
+                            Debes ingresar  fecha de salida y fecha de regreso!
+                        </div>
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Fecha de salida:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control datepicker-here" data-language='en' data-date-format="yyyy-mm-dd" id="dateInit">
+	                    	</div>
+                        </div>
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Fecha de regreso:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control datepicker-here" data-language='en' data-date-format="yyyy-mm-dd" id="dateEnd">
+	                    	</div>
+                        </div>
+
+	                </section>
+	                
+					<!-- SECTION 2 -->
+                    <h4></h4>
+                    
+	                <section>
+                        
+                        <div class="form-row error" id="errorPersonal" style="display: none;"></div>
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Nombre:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control" id="namePoliza">
+	                    	</div>
+                        </div>	
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Apellido:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control" id="lastnamePoliza">
+	                    	</div>
+                        </div>	
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Edad:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control" id="agePoliza">
+	                    	</div>
+                        </div>	
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Dirección:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control" id="direccionPoliza">
+	                    	</div>
+                        </div>	
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Teléfono:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="text" class="form-control" id="telPoliza">
+	                    	</div>
+                        </div>	
+
+                        <div class="form-row">
+	                    	<label for="">
+	                    		Email:
+	                    	</label>
+	                    	<div class="form-holder">
+	                    		<input type="email" class="form-control" id="emailPoliza">
+	                    	</div>
+                        </div>	
+                        
+	                </section>
+
+	                <!-- SECTION 3 -->
+	                <h4></h4>
+	                <section >
+
+                        <input type="hidden" class="form-control" id="product">     
+                        <textarea id="textarea" style="margin-left:-115em;"></textarea>
+
+                        <div class="form-row error" id="errorPackage" style="display: none;"></div>
+	                    <div  id="listaproduct"></div>
+	                </section>
+            	</div>
+            </form>
+		</div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+
+		<!-- DATE-PICKER -->
+		<script src="vendor/date-picker/js/datepicker.js"></script>
+		<script src="vendor/date-picker/js/datepicker.en.js"></script>
+
+		<script src="js/main.js"></script>
+<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
