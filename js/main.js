@@ -154,7 +154,21 @@ $(function(){
             http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             http.onreadystatechange = function() {
                 if(http.readyState == 4 && http.status == 200) {
-                    console.log(http.responseText)
+                    
+                    var res  =JSON.parse(http.responseText);
+                    if(!res.success){
+                        document.getElementById('errorPackage').innerHTML = "Lo sentimos tuvimos problemas para concretar tu compra - error:"+ res.msg;
+                        $("#errorPackage").show();
+                    }else{
+                        $("#errorPackage").hide();
+
+                        document.getElementById('exitoPackage').innerHTML =  res.msg;
+                        $("#exitoPackage").show();
+
+                        setTimeout(() => {
+                            location.reload();
+                        }, 3000);
+                    }
                 }
             }
             http.send(params);

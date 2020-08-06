@@ -61,18 +61,13 @@
                         "thirdReference" => "34661RT",            
                     ]
                 ];
-        // print_r($parametros);
-        // die();
-
-        // $retPoint = array('success' => true, 'msg' => $parametros);
-        // echo json_encode($retPoint);
-        // die();
+       
         $resultado = $client->bookV2($parametros);
         $retPoint = array('success' => true, 'msg' => $resultado);
         
 
     } catch (Exception $ex) {
-        $retPoint =  array('success' => false, 'msg' => "No se pudo conectar con el servicio, intentalo más tarde".$ex->getMessage());
+        $retPoint =  array('success' => false, 'msg' => $ex->getMessage());
         
     }
 
